@@ -1,8 +1,8 @@
+import React from 'react'
 import ReactDOM from 'react-dom'
+
+import App from './App'
 
 const appElement = document.getElementById('app-root')
 
-ReactDOM.render(
-  <h1>C2 Map</h1>,
-  appElement
-)
+ReactDOM.render(<App />, appElement)
