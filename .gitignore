@@ -62,3 +62,6 @@ typings/
 
 # file systems
 .DS_Store
+
+# package managers
+package-lock.json
