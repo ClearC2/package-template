@@ -36,4 +36,4 @@ $ rm -rf package-template.git
 10. Commit your changes to the `package.json`, `README.md`, `example/webpack.config.js`, and `example/src/App.js`, and push them up to GitHub. Your package is now ready for development
 
 ## TODO
-- [ ] Add Mocha/Chai/Enzyme test framework
+- [ ] Add Mocha/Chai/Enzyme/Istanbul test framework
