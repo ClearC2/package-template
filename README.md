@@ -18,15 +18,15 @@ $ cd ..
 $ rm -rf package-template.git
 ````
 6. Change your `package.json` to conform to your new package instead of `c2-map`. This includes:
-  - name
-  - description
-  - keywords
-  - repository URL
-  - bugs URL
-  - homepage URL
+    - name
+    - description
+    - keywords
+    - repository URL
+    - bugs URL
+    - homepage URL
 
 7. Change the `README.md` to to conform to your package. This includes:
-  - title
-  - deleting the `Creating a New Package From the Template` section
+    - title
+    - deleting the `Creating a New Package From the Template` section
 
 8. Commit your changes to the `package.json` and `README.md` push them up to GitHub. Your package is now ready for development
