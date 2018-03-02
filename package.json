@@ -4,6 +4,8 @@
   "description": "high-performance leaflet + d3 map package ",
   "main": "index.js",
   "scripts": {
+    "start": "cd example && webpack-dev-server --inline --content-base dist --history-api-fallback --port 8083 --mode development",
+    "compile": "babel -d lib/ src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,22 @@
   "bugs": {
     "url": "https://github.com/ClearC2/c2-map/issues"
   },
-  "homepage": "https://github.com/ClearC2/c2-map#readme"
+  "homepage": "https://github.com/ClearC2/c2-map#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "html-webpack-plugin": "^3.0.4",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  }
 }
