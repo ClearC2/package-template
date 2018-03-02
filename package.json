@@ -19,9 +19,9 @@
     "url": "git+https://github.com/ClearC2/package-template.git"
   },
   "keywords": [
-    "leaflet",
-    "d3",
-    "map"
+    "react",
+    "package",
+    "template"
   ],
   "author": "Clear C2, Inc.",
   "license": "ISC",
