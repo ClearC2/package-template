@@ -29,4 +29,8 @@ $ rm -rf package-template.git
     - title
     - deleting the `Creating a New Package From the Template` section
 
-8. Commit your changes to the `package.json` and `README.md` push them up to GitHub. Your package is now ready for development
+8. Change the `alias` section in the `example/webpack.config.js` file to resolve your new package name (i.e. change `package-template` to your package name)
+
+9. Change the import statement in `example/src/App.js` to use this new alias instead of `package-template`
+
+10. Commit your changes to the `package.json`, `README.md`, `example/webpack.config.js`, and `example/src/App.js`, and push them up to GitHub. Your package is now ready for development

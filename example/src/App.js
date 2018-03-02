@@ -1,5 +1,5 @@
 import React from 'react'
-import PackageComponent, {PackageSubcomponent} from '../../src'
+import PackageComponent, {PackageSubcomponent} from 'package-template'
 
 export default function App () {
   return (

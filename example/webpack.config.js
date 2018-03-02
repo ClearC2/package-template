@@ -27,6 +27,11 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  resolve: {
+    alias: {
+      'package-template': path.join(__dirname, '../src')
+    }
+  },
   module: {
     rules: [
       {
