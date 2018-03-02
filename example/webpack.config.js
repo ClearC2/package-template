@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const extractSASS = new ExtractTextPlugin('[name].css')
 
-module.exports = {
+let config = {
   entry: {
     app: [
       'babel-polyfill',
@@ -49,3 +49,10 @@ module.exports = {
     ]
   }
 }
+
+if (process.env.NODE_ENV === 'production') {
+  config.output.path = path.join(__dirname, '../docs')
+  config.output.publicPath = './'
+}
+
+module.exports = config

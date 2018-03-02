@@ -6,6 +6,7 @@
   "scripts": {
     "start": "cd example && webpack-dev-server --inline --content-base dist --history-api-fallback --port 8083 --mode development",
     "compile": "babel -d lib/ src/",
+    "build:docs": "rm -rf docs/*.js  && rm -rf docs/*.css && cd example && NODE_ENV=production webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
