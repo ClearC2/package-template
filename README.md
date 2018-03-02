@@ -34,3 +34,6 @@ $ rm -rf package-template.git
 9. Change the import statement in `example/src/App.js` to use this new alias instead of `package-template`
 
 10. Commit your changes to the `package.json`, `README.md`, `example/webpack.config.js`, and `example/src/App.js`, and push them up to GitHub. Your package is now ready for development
+
+## TODO
+- [ ] Add Mocha/Chai/Enzyme test framework
