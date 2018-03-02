@@ -1,7 +1,7 @@
 {
   "name": "c2-map",
   "version": "0.0.0",
-  "description": "high-performance leaflet + d3 map package ",
+  "description": "high-performance leaflet + d3 map package",
   "main": "index.js",
   "scripts": {
     "start": "cd example && webpack-dev-server --inline --content-base dist --history-api-fallback --port 8083 --mode development",

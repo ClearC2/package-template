@@ -1,0 +1,19 @@
+%sans-serif-font {
+  font-family: sans-serif;
+}
+
+#app-root > div {
+
+  h1 {
+    @extend %sans-serif-font;
+  }
+
+  h3 {
+    @extend %sans-serif-font;
+  }
+
+  h4 {
+    @extend %sans-serif-font;
+  }
+
+}
