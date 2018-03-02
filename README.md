@@ -17,7 +17,7 @@ $ git push --mirror <your new package git URI created in step 1>
 $ cd ..
 $ rm -rf package-template.git
 ````
-6. Change your `package.json` to conform to your new package instead of `c2-map`. This includes:
+6. Change your `package.json` to conform to your new package instead of `package-template`. This includes:
     - name
     - description
     - keywords
