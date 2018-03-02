@@ -40,11 +40,54 @@ let config = {
         use: { loader: 'babel-loader' }
       },
       {
+        test: /\.css$/,
+        loader: extractSASS.extract({
+          fallback: 'style-loader',
+          use: [ 'css-loader' ]
+        })
+      },
+      {
         test: /\.scss/,
         loader: extractSASS.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader?sourceMap']
+          use: [ 'css-loader', 'sass-loader?sourceMap' ]
         })
+      },
+      {
+        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+        use: [ 'file-loader' ]
+      },
+      {
+        test: /\.mp3$/,
+        use: [ 'file-loader' ]
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [{
+          loader: 'url-loader',
+          options: { limit: 10000, mimetype: 'application/font-woff' }
+        }]
+      },
+      {
+        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+        use: [{
+          loader: 'url-loader',
+          options: { limit: 10000, mimetype: 'application/octet-stream' }
+        }]
+      },
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        use: [{
+          loader: 'url-loader',
+          options: { limit: 10000, mimetype: 'image/svg+xml' }
+        }]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [{
+          loader: 'url-loader',
+          options: { limit: 8192 }
+        }]
       }
     ]
   }
