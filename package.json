@@ -1,0 +1,24 @@
+{
+  "name": "c2-map",
+  "version": "0.0.0",
+  "description": "high-performance leaflet + d3 map package ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClearC2/c2-map.git"
+  },
+  "keywords": [
+    "leaflet",
+    "d3",
+    "map"
+  ],
+  "author": "Clear C2, Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClearC2/c2-map/issues"
+  },
+  "homepage": "https://github.com/ClearC2/c2-map#readme"
+}
