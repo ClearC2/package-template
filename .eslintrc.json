@@ -3,5 +3,11 @@
       "standard",
       "standard-react"
     ],
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "globals": {
+      "describe": false,
+      "beforeEach": false,
+      "afterEach": false,
+      "it": false
+    }
 }
