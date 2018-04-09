@@ -9,5 +9,8 @@
       "beforeEach": false,
       "afterEach": false,
       "it": false
+    },
+    "rules": {
+      "no-console": "error"
     }
 }
