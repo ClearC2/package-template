@@ -2,7 +2,7 @@
   "name": "package-template",
   "version": "0.0.0",
   "description": "package description",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "cd example && webpack-dev-server --inline --content-base dist --history-api-fallback --port 8083 --mode development",
     "compile": "node_modules/.bin/babel -d lib/ src/",
