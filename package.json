@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd example && webpack-dev-server --inline --content-base dist --history-api-fallback --port 8083 --mode development",
-    "compile": "babel -d lib/ src/",
+    "compile": "node_modules/.bin/babel -d lib/ src/",
     "build:docs": "rm -rf docs/*.js  && rm -rf docs/*.css && cd example && NODE_ENV=production webpack --mode production",
     "test": "node_modules/.bin/mocha --require babel-core/register ./test/null-compiler.js ./test/test-helper.js  \"test/**/*-test.@(js|jsx)\" \"test/**/**-test/*.@(js|jsx)\" -c",
     "test:watch": "npm run test -- --watch",
@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/ClearC2/package-template#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.3",
