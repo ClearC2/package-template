@@ -14,8 +14,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "chmod +x pre-commit && ./pre-commit"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint",
+    "test/**/*.js": "eslint"
   },
   "repository": {
     "type": "git",
@@ -35,7 +39,6 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-polyfill": "^6.26.0",
@@ -49,19 +52,10 @@
     "dirty-chai": "^2.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.18.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-config-standard-react": "^6.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.7.0",
-    "eslint-plugin-standard": "^3.0.1",
+    "eslint-config-c2-react": "^1.3.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.4",
-    "husky": "^0.15.0-rc.8",
     "immutable": "^3.8.2",
     "jsdom": "^11.6.2",
     "mocha": "^5.0.5",
