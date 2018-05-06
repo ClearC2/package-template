@@ -65,3 +65,4 @@ typings/
 
 # package managers
 package-lock.json
+.idea
