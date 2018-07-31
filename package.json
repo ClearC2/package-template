@@ -10,7 +10,18 @@
     "build:docs": "rm -rf docs/*.js  && rm -rf docs/*.css && cd example && NODE_ENV=production webpack --mode production",
     "test": "mocha --require jsdom-global/register --require babel-core/register --require babel-polyfill --require ./test/test-helper.js --require ./test/null-compiler.js",
     "test:watch": "npm run test -- --watch",
-    "test:report": "nyc --reporter=html npm test"
+    "test:report": "nyc --reporter=html npm test",
+    "cm": "git-cz",
+    "semantic-release": "semantic-release"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "branch": "master",
+    "extends": "c2-semantic-release"
   },
   "husky": {
     "hooks": {
@@ -45,6 +56,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "c2-semantic-release": "ClearC2/c2-semantic-release#^1.0.0",
     "chai": "^4.1.2",
     "chai-immutable": "^1.6.0",
     "clean-webpack-plugin": "^0.1.18",
