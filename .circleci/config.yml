@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.11.1-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "yarn.lock" }}
+          - v1-dependencies-
+      - run: yarn install --frozen-lockfile
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+      - run: yarn run test:report
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - run: yarn run build
+      - run: yarn run build:docs
+      - run:
+          command: yarn run semantic-release
+          environment:
+            ASSETS: dist,docs
