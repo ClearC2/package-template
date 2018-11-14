@@ -1,6 +1,6 @@
 {
   "name": "package-template",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "package description",
   "main": "dist/index.js",
   "scripts": {
