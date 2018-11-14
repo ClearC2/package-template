@@ -29,7 +29,7 @@ let config = {
   },
   resolve: {
     alias: {
-      'c2-data-provider': path.join(__dirname, '../src')
+      'package-template': path.join(__dirname, '../src')
     }
   },
   module: {

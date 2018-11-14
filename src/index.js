@@ -1,3 +1,4 @@
-import dataProvider from './dataProvider'
+import PackageComponent from './PackageComponent'
+export {default as PackageSubcomponent} from './PackageSubcomponent'
 
-export default dataProvider
+export default PackageComponent
